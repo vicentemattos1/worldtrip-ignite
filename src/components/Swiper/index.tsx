@@ -24,7 +24,7 @@ export function SwiperComponent() {
         <SwiperSlide>
           <Flex
             flexDir="column"
-            bgImage="url(SwiperImage.svg)"
+            bgImage="url(/images/continents/europe/SwiperImage.svg)"
             bgRepeat="no-repeat"
             bgSize="cover"
             h="100%"
@@ -33,7 +33,7 @@ export function SwiperComponent() {
             fontWeight="bold"
             textAlign="center"
           >
-            <Link href="continent/europe">
+            <Link href="/continent/europe">
               <a>
                 <Text color="white.200" fontSize="48px">
                   Europa
@@ -46,13 +46,6 @@ export function SwiperComponent() {
           </Flex>
         </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
     </Flex>
   );
