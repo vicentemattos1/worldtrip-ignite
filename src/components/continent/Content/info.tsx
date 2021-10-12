@@ -3,7 +3,7 @@ import { RiInformationLine } from "react-icons/ri";
 
 export function Info() {
   return (
-    <Flex alignItems="center" my="5rem">
+    <Flex alignItems="center" my="5rem" justifyContent="space-between">
       <Text fontWeight="400" fontSize="24px" textAlign="justify" maxW="600px">
         A Europa é, por convenção, um dos seis continentes do mundo.
         Compreendendo a península ocidental da Eurásia, a Europa geralmente
