@@ -14,7 +14,7 @@ export default function Home() {
       <Separator />
       <Text
         fontWeight="500"
-        fontSize="36px"
+        fontSize={["20px", "36px"]}
         textAlign="center"
         maxWidth="850px"
         margin="3.125rem auto"

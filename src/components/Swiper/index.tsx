@@ -35,10 +35,10 @@ export function SwiperComponent() {
           >
             <Link href="/continent/europe">
               <a>
-                <Text color="white.200" fontSize="48px">
+                <Text color="white.200" fontSize={["24px", "48px"]}>
                   Europa
                 </Text>
-                <Text color="gray.200" fontSize="24px" mt="0.5rem">
+                <Text color="gray.200" fontSize={["14px", "24px"]} mt="0.5rem">
                   O continente mais antigo.
                 </Text>
               </a>

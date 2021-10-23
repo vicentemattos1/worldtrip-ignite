@@ -2,6 +2,7 @@
 .swiper-button-prev {
   color: #ffba08;
   margin: 0 50px;
+  transform: translate(0%, -50%);
 }
 
 .swiper-button-next::after,
@@ -16,4 +17,19 @@
 }
 .swiper-pagination-bullet-active {
   background: #ffba08;
+}
+
+@media (max-width: 480px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin: 0 8px;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 2rem;
+  }
+  .swiper-pagination-bullet {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
 }

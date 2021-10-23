@@ -1,45 +1,90 @@
-import { Grid, Flex, Image, Box, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  Text,
+  UnorderedList,
+  ListItem,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 
 export function TavelTypes() {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+
   return (
-    <Grid
-      gridTemplateColumns="1fr 1fr 1fr 1fr 1fr "
-      margin="5rem auto"
+    <UnorderedList
+      display={["flex", "grid"]}
+      gridTemplateColumns={["1fr 1fr", "1fr 1fr 1fr 1fr 1fr "]}
+      flexWrap="wrap"
+      justifyContent="space-between"
+      my="5rem"
+      gap={["10px", "0"]}
+      mx={["50px", "auto"]}
       maxW="1160px"
-      w="100%"
+      w={["275px", "100%"]}
       color="gray.700"
       fontWeight="600"
     >
-      <Flex flexDirection="column" alignItems="center">
-        <Image src="./cocktail.svg" alt="cocktail" />
-        <Text fontSize="1.5rem" mt="1.5rem">
+      <ListItem
+        display={isWideVersion && "flex"}
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        color={["yellow.500", "initial"]}
+      >
+        {isWideVersion && <Image src="./cocktail.svg" alt="cocktail" />}
+        <Text color="gray.700" fontSize="1.5rem" mt="1.5rem">
           vida noturna
         </Text>
-      </Flex>
-      <Flex flexDirection="column" alignItems="center">
-        <Image src="./surf.svg" alt="surf" />
-        <Text fontSize="1.5rem" mt="1.5rem">
+      </ListItem>
+      <ListItem
+        color={["yellow.500", "initial"]}
+        display={isWideVersion && "flex"}
+        flexDirection="column"
+        alignItems="center"
+      >
+        {isWideVersion && <Image src="./surf.svg" alt="surf" />}
+        <Text color="gray.700" fontSize="1.5rem" mt="1.5rem">
           praia
         </Text>
-      </Flex>
-      <Flex flexDirection="column" alignItems="center">
-        <Image src="./building.svg" alt="building" />
-        <Text fontSize="1.5rem" mt="1.5rem">
+      </ListItem>
+      <ListItem
+        color={["yellow.500", "initial"]}
+        display={isWideVersion && "flex"}
+        flexDirection="column"
+        alignItems="center"
+      >
+        {isWideVersion && <Image src="./building.svg" alt="building" />}
+        <Text color="gray.700" fontSize="1.5rem" mt="1.5rem">
           moderno
         </Text>
-      </Flex>
-      <Flex flexDirection="column" alignItems="center">
-        <Image src="./museum.svg" alt="museum" />
-        <Text fontSize="1.5rem" mt="1.5rem">
+      </ListItem>
+      <ListItem
+        color={["yellow.500", "initial"]}
+        display={isWideVersion && "flex"}
+        flexDirection="column"
+        alignItems="center"
+      >
+        {isWideVersion && <Image src="./museum.svg" alt="museum" />}
+        <Text color="gray.700" fontSize="1.5rem" mt="1.5rem">
           clássico
         </Text>
-      </Flex>
-      <Flex flexDirection="column" alignItems="center">
-        <Image src="./earth.svg" alt="earth" />
-        <Text fontSize="1.5rem" mt="1.5rem">
-          e mais...
-        </Text>
-      </Flex>
-    </Grid>
+      </ListItem>
+      <Box flex="1" display="flex" justifyContent="center">
+        <ListItem
+          color={["yellow.500", "initial"]}
+          display={isWideVersion && "flex"}
+          flexDirection="column"
+          alignItems="center"
+        >
+          {isWideVersion && <Image src="./earth.svg" alt="earth" />}
+          <Text color="gray.700" fontSize="1.5rem" mt="1.5rem">
+            e mais...
+          </Text>
+        </ListItem>
+      </Box>
+    </UnorderedList>
   );
 }

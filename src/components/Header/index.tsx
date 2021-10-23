@@ -13,8 +13,9 @@ export function Header() {
     <Flex
       as="header"
       justifyContent="center"
-      height="6.25rem"
-      p="1.6875rem 1rem"
+      height={["50px", "6.25rem"]}
+      px="1rem"
+      py={["15px", "1.6875rem"]}
       position="relative"
       maxW="100vw"
       w="100%"
