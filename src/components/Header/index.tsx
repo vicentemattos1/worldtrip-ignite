@@ -23,13 +23,18 @@ export function Header() {
       {!isHome && (
         <Box
           position="absolute"
-          left="140px"
+          left={["16px", "140px"]}
           top="50%"
           transform="translate(0,-50%)"
         >
           <Link href="/">
             <a>
-              <Icon as={RiArrowLeftSLine} cursor="pointer" w="32px" h="32px" />
+              <Icon
+                as={RiArrowLeftSLine}
+                cursor="pointer"
+                w={["20px", "32px"]}
+                h={["20px", "32px"]}
+              />
             </a>
           </Link>
         </Box>

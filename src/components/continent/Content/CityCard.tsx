@@ -2,7 +2,7 @@ import { Box, Image, Avatar, Text, Flex } from "@chakra-ui/react";
 
 export function CityCard() {
   return (
-    <Box>
+    <Box w={["256px", "auto"]}>
       <Image src="/images/continents/europe/Londres.svg" alt="Londres" />
       <Flex
         border="solid 1px #FFBA08"

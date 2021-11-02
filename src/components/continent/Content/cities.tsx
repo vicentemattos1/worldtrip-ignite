@@ -3,11 +3,22 @@ import { CityCard } from "./CityCard";
 
 export function Cities() {
   return (
-    <Flex flexDirection="column">
-      <Text color="gray.700" fontSize="36px" fontWeight="500" mb="40px">
+    <Flex flexDirection="column" mx={["16px", "0px"]}>
+      <Text
+        color="gray.700"
+        fontSize={["24px", "36px"]}
+        fontWeight="500"
+        mb="40px"
+      >
         Cidades +100
       </Text>
-      <Grid gridTemplateColumns="1fr 1fr 1fr 1fr" gap="45px">
+      <Grid
+        d={["flex", "grid"]}
+        flexDirection="column"
+        alignItems="center"
+        gridTemplateColumns={"1fr 1fr 1fr 1fr"}
+        gap="45px"
+      >
         <CityCard />
         <CityCard />
         <CityCard />

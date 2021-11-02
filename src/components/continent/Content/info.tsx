@@ -3,36 +3,56 @@ import { RiInformationLine } from "react-icons/ri";
 
 export function Info() {
   return (
-    <Flex alignItems="center" my="5rem" justifyContent="space-between">
-      <Text fontWeight="400" fontSize="24px" textAlign="justify" maxW="600px">
+    <Flex
+      flexDir={["column", "row"]}
+      alignItems="center"
+      my={["24px", "5rem"]}
+      mx={["16px", "0"]}
+      justifyContent="space-between"
+    >
+      <Text
+        fontWeight="400"
+        fontSize={["14px", "24px"]}
+        textAlign="justify"
+        maxW="600px"
+      >
         A Europa é, por convenção, um dos seis continentes do mundo.
         Compreendendo a península ocidental da Eurásia, a Europa geralmente
         divide-se da Ásia a leste pela divisória de águas dos montes Urais, o
         rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
       </Text>
-      <Grid gridTemplateColumns="1fr 1fr 1fr" fontWeight="600">
+      <Grid
+        gridTemplateColumns="1fr 1fr 1fr"
+        fontWeight="600"
+        mt={["16px", "0px"]}
+      >
         <Flex flexDir="column" alignItems="center">
-          <Text color="yellow.500" fontSize="48">
+          <Text color="yellow.500" fontSize={["24px", "48px"]}>
             50
           </Text>
-          <Text fontSize="24px">países</Text>
+          <Text fontSize={["18px", "24px"]}>países</Text>
         </Flex>
         <Flex flexDir="column" alignItems="center">
-          <Text color="yellow.500" fontSize="48">
+          <Text color="yellow.500" fontSize={["24px", "48px"]}>
             60
           </Text>
-          <Text fontSize="24px">linguas</Text>
+          <Text fontSize={["18px", "24px"]}>linguas</Text>
         </Flex>
         <Flex flexDir="column" alignItems="center">
-          <Text color="yellow.500" fontSize="48">
+          <Text color="yellow.500" fontSize={["24px", "48px"]}>
             27
           </Text>
 
-          <Text fontSize="24px" display="flex" textAlign="center">
+          <Text
+            fontSize={["18px", "24px"]}
+            display="flex"
+            textAlign="center"
+            mt={["8px", "0"]}
+          >
             cidades +100
             <Tooltip
               label="Mais de 100 habitantes"
-              aria-label="A tooltip"
+              aria-label="Info cidades"
               ml="0.5.rem"
             >
               <Text as="span">
